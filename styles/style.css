@@ -1,0 +1,181 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #F3F3F3;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+  margin: 3.126rem auto 0 auto;
+  max-width: 720px;;
+}
+
+header {
+  display: block;
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.text-center {
+  text-align: center;
+  line-height: 1.2;
+}
+
+h1, p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+#survey-form {
+  background: rgba(27, 27, 50, 0.8);
+  padding: 40px;
+  display: block;
+  border-radius: 0.25rem;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+#name-label {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#email-label {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#number-label {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#description {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: text;
+  letter-spacing: normal;
+  font-weight: 800;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-weight: 800;
+}
+
+input::placeholder {
+  font-weight: 600;
+  color: #808080;
+}
+
+span.clue {
+  margin-left: 5.5px;
+  font-weight: 600;
+  font-size: 14.4px;
+  line-height: 20.16px;
+  color: #e4e4e4;
+}
+
+p {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+input.input-radio {
+  min-height: 20px;
+  min-width: 20px;
+  margin-right: 10px;
+}
+
+option {
+  font-weight: 600;
+}
+
+input.input-checkbox {
+  min-width: 20px;
+  min-height: 20px;
+  margin-right: 0.625rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+  text-align: start;
+  color: black;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: rgba(55, 175, 101);
+  color: rgba(243, 243, 243);
+  border-style: none;
+  border-radius: 2px;
+}
+
+@media (min-width: 831px) {
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  max-width: 720px;
+}
